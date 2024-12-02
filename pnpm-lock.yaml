@@ -70,6 +70,115 @@ importers:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@20.12.7)(typescript@5.7.2)
 
+  apps/facility-landingpage:
+    dependencies:
+      '@equinor/eds-core-react':
+        specifier: ^0.42.5
+        version: 0.42.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
+      '@equinor/eds-icons':
+        specifier: ^0.21.0
+        version: 0.21.0
+      '@equinor/eds-tokens':
+        specifier: ^0.9.2
+        version: 0.9.2
+      '@equinor/fusion-framework-module-context':
+        specifier: ^5.0.12
+        version: 5.0.14(@equinor/fusion-framework-module@4.3.5(@types/semver@7.5.8))(@types/react@18.3.2)(chalk@5.3.0)(react@18.3.1)(rxjs@7.8.1)
+      '@equinor/fusion-framework-module-event':
+        specifier: ^4.2.4
+        version: 4.2.4(@types/semver@7.5.8)
+      '@equinor/fusion-framework-module-feature-flag':
+        specifier: ^1.1.9
+        version: 1.1.11(@types/react@18.3.2)(@types/semver@7.5.8)(react@18.3.1)
+      '@equinor/fusion-framework-module-http':
+        specifier: ^6.2.0
+        version: 6.2.0(@types/semver@7.5.8)
+      '@equinor/fusion-framework-module-navigation':
+        specifier: ^4.0.7
+        version: 4.0.7(@equinor/fusion-framework-module@4.3.5(@types/semver@7.5.8))(@remix-run/router@1.21.0)(rxjs@7.8.1)
+      '@equinor/fusion-framework-react':
+        specifier: ^7.3.3
+        version: 7.3.3(@equinor/fusion-framework-module-event@4.2.4(@types/semver@7.5.8))(@equinor/fusion-framework-module-feature-flag@1.1.11(@types/react@18.3.2)(@types/semver@7.5.8)(react@18.3.1))(@equinor/fusion-framework-module-http@6.2.0(@types/semver@7.5.8))(@equinor/fusion-framework-react-module-context@6.2.15(@equinor/fusion-framework-module@4.3.5(@types/semver@7.5.8))(@types/react@18.3.2)(@types/semver@7.5.8)(chalk@5.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1))(@types/react@18.3.2)(@types/semver@7.5.8)(chalk@5.3.0)(odata-query@7.0.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@equinor/fusion-framework-react-app':
+        specifier: 5.2.10
+        version: 5.2.10(@equinor/fusion-framework-module-event@4.2.4(@types/semver@7.5.8))(@equinor/fusion-framework-module-feature-flag@1.1.11(@types/react@18.3.2)(@types/semver@7.5.8)(react@18.3.1))(@equinor/fusion-framework-module-http@6.2.0(@types/semver@7.5.8))(@equinor/fusion-framework-module-msal@3.1.5(@types/semver@7.5.8))(@equinor/fusion-framework-react-module-context@6.2.15(@equinor/fusion-framework-module@4.3.5(@types/semver@7.5.8))(@types/react@18.3.2)(@types/semver@7.5.8)(chalk@5.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1))(@remix-run/router@1.21.0)(@types/react@18.3.2)(@types/semver@7.5.8)(chalk@5.3.0)(odata-query@7.0.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
+      '@equinor/fusion-framework-react-module-context':
+        specifier: ^6.2.13
+        version: 6.2.15(@equinor/fusion-framework-module@4.3.5(@types/semver@7.5.8))(@types/react@18.3.2)(@types/semver@7.5.8)(chalk@5.3.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rxjs@7.8.1)
+      '@equinor/fusion-portal-module-app-config':
+        specifier: workspace:^
+        version: link:../../fusion-portal/module/app-config
+      '@equinor/fusion-portal-module-menu':
+        specifier: workspace:^
+        version: link:../../fusion-portal/module/menu
+      '@equinor/fusion-portal-react-app':
+        specifier: workspace:^
+        version: link:../../fusion-portal/react/app
+      '@equinor/fusion-portal-react-components':
+        specifier: workspace:^
+        version: link:../../fusion-portal/react/components
+      '@equinor/fusion-portal-react-context':
+        specifier: workspace:^
+        version: link:../../fusion-portal/react/context
+      '@equinor/fusion-portal-react-extensions':
+        specifier: workspace:^
+        version: link:../../fusion-portal/react/extensions
+      '@equinor/fusion-portal-react-utils':
+        specifier: workspace:^
+        version: link:../../fusion-portal/react/utils
+      '@equinor/fusion-react-context-selector':
+        specifier: ^0.6.6
+        version: 0.6.7(@types/react@18.3.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@equinor/fusion-react-person':
+        specifier: ^0.9.2
+        version: 0.9.3(react@18.3.1)
+      '@equinor/fusion-react-skeleton':
+        specifier: ^0.3.0
+        version: 0.3.0(react@18.3.1)
+      '@equinor/project-portal-common':
+        specifier: workspace:^
+        version: link:../project-portal-common
+      '@tanstack/react-query':
+        specifier: ^5.62.0
+        version: 5.62.0(react@18.3.1)
+      luxon:
+        specifier: ^3.5.0
+        version: 3.5.0
+      react-router-dom:
+        specifier: ^6.27.0
+        version: 6.28.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      styled-components:
+        specifier: 6.1.12
+        version: 6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    devDependencies:
+      '@equinor/fusion-framework-cli':
+        specifier: ^10.2.5
+        version: 10.2.5(@types/node@20.12.7)(typescript@5.6.3)
+      '@types/luxon':
+        specifier: ^3.4.2
+        version: 3.4.2
+      '@types/react':
+        specifier: 18.3.2
+        version: 18.3.2
+      '@types/react-dom':
+        specifier: 18.3.0
+        version: 18.3.0
+      react:
+        specifier: ^18.2.0
+        version: 18.3.1
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.3.1(react@18.3.1)
+      typescript:
+        specifier: ~5.6.2
+        version: 5.6.3
+      vite:
+        specifier: ^6.0.2
+        version: 6.0.2(@types/node@20.12.7)(yaml@2.5.1)
+      vite-plugin-environment:
+        specifier: ^1.1.3
+        version: 1.1.3(vite@6.0.2(@types/node@20.12.7)(yaml@2.5.1))
+
   apps/project-landingpage:
     dependencies:
       '@equinor/eds-core-react':
@@ -153,7 +262,7 @@ importers:
     devDependencies:
       '@equinor/fusion-framework-cli':
         specifier: ^10.2.5
-        version: 10.2.5(@types/node@20.12.7)(typescript@5.7.2)
+        version: 10.2.5(@types/node@20.12.7)(typescript@5.6.3)
       '@types/luxon':
         specifier: ^3.4.2
         version: 3.4.2
@@ -226,7 +335,7 @@ importers:
     devDependencies:
       '@equinor/fusion-framework-cli':
         specifier: ^10.2.5
-        version: 10.2.5(@types/node@20.12.7)(typescript@5.7.2)
+        version: 10.2.5(@types/node@20.12.7)(typescript@5.6.3)
       '@types/react':
         specifier: 18.3.2
         version: 18.3.2
@@ -320,7 +429,7 @@ importers:
     devDependencies:
       '@equinor/fusion-framework-cli':
         specifier: ^10.2.5
-        version: 10.2.5(@types/node@20.12.7)(typescript@5.7.2)
+        version: 10.2.5(@types/node@20.12.7)(typescript@5.6.3)
       '@types/react':
         specifier: 18.3.2
         version: 18.3.2
@@ -360,7 +469,7 @@ importers:
     devDependencies:
       '@equinor/fusion-framework-cli':
         specifier: ^10.2.5
-        version: 10.2.5(@types/node@20.12.7)(typescript@5.7.2)
+        version: 10.2.5(@types/node@20.12.7)(typescript@5.6.3)
       '@equinor/fusion-framework-module':
         specifier: ^4.3.5
         version: 4.3.5(@types/semver@7.5.8)
@@ -394,7 +503,7 @@ importers:
     devDependencies:
       '@equinor/fusion-framework-cli':
         specifier: ^10.2.5
-        version: 10.2.5(@types/node@20.12.7)(typescript@5.7.2)
+        version: 10.2.5(@types/node@20.12.7)(typescript@5.6.3)
       '@equinor/fusion-framework-module':
         specifier: ^4.3.5
         version: 4.3.5(@types/semver@7.5.8)
@@ -4773,6 +4882,11 @@ packages:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
 
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
   typescript@5.7.2:
     resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
     engines: {node: '>=14.17'}
@@ -5454,7 +5568,7 @@ snapshots:
       - odata-query
       - react
 
-  '@equinor/fusion-framework-cli@10.2.5(@types/node@20.12.7)(typescript@5.7.2)':
+  '@equinor/fusion-framework-cli@10.2.5(@types/node@20.12.7)(typescript@5.6.3)':
     dependencies:
       '@vitejs/plugin-react': 4.3.4(vite@5.4.11(@types/node@20.12.7))
       adm-zip: 0.5.16
@@ -5474,7 +5588,7 @@ snapshots:
       vite: 5.4.11(@types/node@20.12.7)
       vite-plugin-environment: 1.1.3(vite@5.4.11(@types/node@20.12.7))
       vite-plugin-restart: 0.4.2(vite@5.4.11(@types/node@20.12.7))
-      vite-tsconfig-paths: 4.3.2(typescript@5.7.2)(vite@5.4.11(@types/node@20.12.7))
+      vite-tsconfig-paths: 4.3.2(typescript@5.6.3)(vite@5.4.11(@types/node@20.12.7))
       zod: 3.23.8
     transitivePeerDependencies:
       - '@types/node'
@@ -10179,9 +10293,9 @@ snapshots:
       v8-compile-cache-lib: 3.0.1
       yn: 3.1.1
 
-  tsconfck@3.1.4(typescript@5.7.2):
+  tsconfck@3.1.4(typescript@5.6.3):
     optionalDependencies:
-      typescript: 5.7.2
+      typescript: 5.6.3
 
   tslib@1.14.1: {}
 
@@ -10272,6 +10386,8 @@ snapshots:
       is-typed-array: 1.1.13
       possible-typed-array-names: 1.0.0
       reflect.getprototypeof: 1.0.7
+
+  typescript@5.6.3: {}
 
   typescript@5.7.2: {}
 
@@ -10364,11 +10480,11 @@ snapshots:
       micromatch: 4.0.8
       vite: 5.4.11(@types/node@20.12.7)
 
-  vite-tsconfig-paths@4.3.2(typescript@5.7.2)(vite@5.4.11(@types/node@20.12.7)):
+  vite-tsconfig-paths@4.3.2(typescript@5.6.3)(vite@5.4.11(@types/node@20.12.7)):
     dependencies:
       debug: 4.3.7
       globrex: 0.1.2
-      tsconfck: 3.1.4(typescript@5.7.2)
+      tsconfck: 3.1.4(typescript@5.6.3)
     optionalDependencies:
       vite: 5.4.11(@types/node@20.12.7)
     transitivePeerDependencies:
