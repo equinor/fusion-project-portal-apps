@@ -1,0 +1,37 @@
+{
+  "name": "@equinor/project-portal-common",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "dev:local": "npm run dev -- --watch",
+    "build": "tsc -b -f"
+  },
+  "dependencies": {
+    "@equinor/fusion-portal-react-context": "workspace:^",
+    "@equinor/fusion-portal-react-components": "workspace:^",
+    "@equinor/fusion-portal-react-app": "workspace:^",
+    "@equinor/fusion-framework-module-context": "^5.0.12",
+    "@equinor/fusion-portal-react-utils": "workspace:^",
+    "@equinor/fusion-react-person": "^0.9.3",
+    "@equinor/fusion-framework-module-navigation": "^4.0.7",
+    "@equinor/fusion-framework-react": "^7.3.3",
+    "@equinor/fusion-framework-react-app": "^5.3.1",
+    "@equinor/fusion-react-searchable-dropdown": "^0.5.2",
+    "@equinor/fusion-react-skeleton": "^0.3.0",
+    "@equinor/eds-core-react": "^0.42.5",
+    "@equinor/eds-tokens": "^0.9.2",
+    "@equinor/eds-icons": "^0.21.0",
+    "styled-components": "6.1.12",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@equinor/fusion-framework-cli": "^10.2.5",
+    "@types/react": "18.3.2",
+    "@types/react-dom": "18.3.0"
+  }
+}
