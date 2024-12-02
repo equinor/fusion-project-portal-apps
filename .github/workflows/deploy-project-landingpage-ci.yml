@@ -1,0 +1,42 @@
+name: Deploy project-landingpage CI
+
+on:
+    push:
+        branches: ['main']
+        paths:
+            - 'apps/project-landingpage/**'
+
+permissions:
+    actions: read
+    checks: write
+    contents: read
+    deployments: write
+    id-token: write
+
+jobs:
+    build:
+        environment: non-prod
+        name: Deploy
+        timeout-minutes: 15
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out code
+              uses: actions/checkout@v4
+
+            - name: Get fusion token
+              id: 'get-fusion-token'
+              uses: ./.github/actions/get-fusion-token
+              with:
+                  client-id: ${{secrets.AZURE_SP_FUSION}}
+                  tenant-id: ${{secrets.AZURE_TENANT_ID}}
+                  resource-id: ${{secrets.AZURE_FUSION_SCOPE}}
+
+            - name: Install
+              run: |
+                  pnpm install
+
+            - name: Deploy
+              run: |
+                  cd apps/project-landingpage
+                  fusion-framework-cli app build-publish -e ci
