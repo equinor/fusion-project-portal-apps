@@ -1,0 +1,68 @@
+{
+  "name": "fusion-project-portal-apps",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [
+    "fusion",
+    "portal",
+    "widgets"
+  ],
+  "author": "oroc@equinor.com",
+  "license": "MIT",
+  "engines": {
+    "node": "^20",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm",
+    "pnpm": ">=9"
+  },
+  "packageManager": "pnpm@9.0.5",
+  "repository": "git+https://github.com/equinor/fusion-portal.git",
+  "bugs": {
+    "url": "https://github.com/equinor/fusion/issues"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "@types/node": "20.12.7"
+  },
+  "dependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@equinor/eslint-config-fusion-react": "^2.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@vitest/coverage-v8": "^1.1.3",
+    "eslint": "^9.16.0",
+    "eslint-formatter-rdjson": "^1.0.6",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-rxjs": "^5.0.3",
+    "genversion": "^3.2.0",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "tslib": "^2.6.2",
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.3",
+    "vitest-github-actions-reporter": "^0.11.1"
+  },
+  "scripts": {
+    "serve": "turbo run dev --filter",
+    "build": "turbo build",
+    "build:apps": "turbo build --filter './apps/*' build",
+    "build:fusion-portal": "turbo build --filter './fusion-portal/*' build",
+    "build:affected": "turbo build --filter=...origin/main build",
+    "build:clean": "pnpm clean:build && pnpm build",
+    "clean": "pnpm clean:build && pnpm clean:npm",
+    "clean:npm": "pnpm -r exec rimraf node_modules && pnpm exec rimraf node_modules",
+    "clean:build": "pnpm -r exec rimraf dist tmp .cache .turbo tsconfig.tsbuildinfo",
+    "install": "pnpm -r exec genversion --es6 --semi src/version.ts",
+    "install:clean": "pnpm clean && pnpm install",
+    "test": "vitest --passWithNoTests",
+    "test:coverage": "vitest run --coverage --passWithNoTests"
+  },
+  "lint-staged": {
+    "./packages/**/src/**/*.{ts,tsx}": [
+      "eslint --quiet --fix",
+      "vitest related --run"
+    ]
+  }
+}

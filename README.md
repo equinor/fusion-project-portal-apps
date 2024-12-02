@@ -1,2 +1,3 @@
-# fusion-project-portal-apps
-fusion-project-portal-app
+# Fusion Portals
+
+## 👋 [Contribute?](./CONTRIBUTING.md)
