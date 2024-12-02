@@ -1,0 +1,28 @@
+{
+  "name": "@equinor/fusion-portal-module-app-config",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "dev": "npm run build -- --watch",
+    "dev:local": "npm run dev -- --watch",
+    "build": "tsc -b -f"
+  },
+  "dependencies": {
+    "rxjs": "^7.8.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@equinor/fusion-framework-module-http": "^6.2.0",
+    "@equinor/fusion-framework-module-app": "^6.0.1",
+    "@equinor/fusion-query": "^5.1.5",
+    "@equinor/eds-tokens": "^0.9.2"
+  },
+  "devDependencies": {
+    "@equinor/fusion-framework-module": "^4.3.5",
+    "@equinor/fusion-framework-cli": "^10.2.5",
+    "@types/react": "18.3.2",
+    "@types/react-dom": "18.3.0"
+  }
+}
