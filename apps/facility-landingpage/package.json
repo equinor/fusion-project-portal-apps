@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "fusion-framework-cli app dev",
     "build": "tsc -b -f",
+    "deploy:ci": "fusion-framework-cli app build-publish -e ci",
     "pr:deploy": "tsx ../../github-action/src/releasePr.ts release",
     "fprd:deploy": "tsx ../../github-action/src/releaseMain.ts release"
   },
@@ -45,7 +46,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "~5.6.2",
-    "@equinor/fusion-framework-cli": "^10.2.5",
     "@types/luxon": "^3.4.2",
     "@types/react": "18.3.2",
     "@types/react-dom": "18.3.0",
