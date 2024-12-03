@@ -10,7 +10,7 @@ const appComponent = createElement(App);
 
 const createApp = (args: ComponentRenderArgs) => makeComponent(appComponent, args, configure);
 
-// Render app Function with root element
+
 export default function (el: HTMLElement, args: ComponentRenderArgs) {
 	const app = createApp(args);
 

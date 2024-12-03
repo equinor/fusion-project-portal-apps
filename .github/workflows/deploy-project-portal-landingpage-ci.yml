@@ -38,4 +38,5 @@ jobs:
             - name: Deploy
               run: |
                   cd apps/project-portal-landingpage
+                  npm i -g @equinor/fusion-framework-cli
                   fusion-framework-cli app build-publish -e ci
