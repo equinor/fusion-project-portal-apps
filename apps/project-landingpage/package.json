@@ -1,6 +1,6 @@
 {
   "name": "project-landingpage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "private": true,
   "type": "module",
@@ -39,7 +39,9 @@
     "@tanstack/react-query": "^5.62.0",
     "@equinor/fusion-framework-react": "^7.3.3",
     "react-router-dom": "^6.27.0",
-    "luxon": "^3.5.0"
+    "luxon": "^3.5.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
     "@equinor/fusion-framework-cli": "^10.2.5",
